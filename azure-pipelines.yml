@@ -20,3 +20,6 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+variables:
+ AZP_AGENT_CLEANUP_PSMODULES_IN_POWERSHELL: "true"
