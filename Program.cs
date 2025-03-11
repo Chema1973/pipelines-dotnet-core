@@ -24,6 +24,6 @@ namespace pipelines_dotnet_core
                 {
                     builder.UseStartup<Startup>();
                 });
-                
+    
     }
 }
