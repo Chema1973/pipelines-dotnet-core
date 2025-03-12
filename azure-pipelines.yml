@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- 2025-03-11_azure-pipelines
 
 variables:
   mydate: $(Get-Date -Format yyyy-MM-dd hhmmss)
