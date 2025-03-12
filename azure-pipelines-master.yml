@@ -16,7 +16,7 @@ variables:
 #name: $(Date:yyyyMMdd)-$(Hours:HH)$(Minutes:mm)$(Seconds:ss)-$(branch)
 #name: $(Date:yyyyMMdd)-$(Time:HHmmss)-$(branch)
 # name: $(Date:yyyyMMdd)-$(Hour:HH)-$(branch)
-name: pipeline.startTime-$(branch)
+name: $(pipeline.startTime)-$(branch)
 
 pool:
   vmImage: ubuntu-latest
