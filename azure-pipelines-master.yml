@@ -1,4 +1,4 @@
-# Starter pipeline
+﻿# Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -14,10 +14,10 @@ pool:
 
 steps:
 - script: echo Hello, world!
-  displayName: 'Branch - Run a one-line script'
+  displayName: 'Master - Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo Branch 2025-03-11_azure-pipelines
-  displayName: 'Branch - Run a multi-line script'
+    echo Master Branckh
+  displayName: 'Master - Run a multi-line script'
