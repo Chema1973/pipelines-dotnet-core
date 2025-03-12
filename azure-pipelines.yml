@@ -6,13 +6,13 @@
 trigger:
 - 2025-03-11_azure-pipelines
 
-# variables:
-#   mydate: $(Get-Date -Format yyyy-MM-dd hhmmss)
-#   branch: "2025-03-11_azure-pipelines"
+variables:
+   mydate: $[ format('{0:yyyyMMdd HHmmss}', pipeline.startTime) ]
+   branch: 2025-03-11_azure-pipelines
 
 # name: $(Get-Date -Format yyyy-MM-dd hhmmss)"-$(branch)"
 
-name: "Prueba-Branch"
+name: $(mydate)-$(branch)
 
 pool:
   vmImage: ubuntu-latest
