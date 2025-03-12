@@ -11,7 +11,7 @@ variables:
   branch: master
 
 # name: $(branch)
-name: "Prueba-Master"
+name: $(Date:yyyyMMdd)-$(Hours)$(Minutes)$(Seconds) - "Prueba-Master"
 
 pool:
   vmImage: ubuntu-latest
