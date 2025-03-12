@@ -11,7 +11,7 @@ variables:
   branch: master
 
 # name: $(branch)
-name: "Prueba"
+name: "Prueba-Master"
 
 pool:
   vmImage: ubuntu-latest

@@ -12,6 +12,8 @@ trigger:
 
 # name: $(Get-Date -Format yyyy-MM-dd hhmmss)"-$(branch)"
 
+name: "Prueba-Branch"
+
 pool:
   vmImage: ubuntu-latest
   name: Default
