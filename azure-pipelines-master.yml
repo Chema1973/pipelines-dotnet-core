@@ -13,7 +13,8 @@ variables:
 # name: $(branch)
 # name: $(Date:yyyyMMdd)-$(Hours)$(Minutes)$(Seconds) - "Prueba-Master"
 # name: $(mydate)-$(branch)
-name: $(Date:yyyyMMdd)-$(Hours:HH)$(Minutes:mm)$(Seconds:ss)-$(branch)
+#name: $(Date:yyyyMMdd)-$(Hours:HH)$(Minutes:mm)$(Seconds:ss)-$(branch)
+name: $(Date:yyyyMMdd)-$(Time:HHmmss)-$(branch)
 
 pool:
   vmImage: ubuntu-latest
