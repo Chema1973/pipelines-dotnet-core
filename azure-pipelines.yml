@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-  mydate: $(Get-Date -Format yyyy-MM-dd hh:mm:ss)
+  mydate: $(Get-Date -Format yyyy-MM-dd hhmmss)
   branch: "2025-03-11_azure-pipelines"
 
 name: "$(mydate)-$(branch)"
