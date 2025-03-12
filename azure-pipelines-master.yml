@@ -7,12 +7,12 @@ trigger:
 - master
 
 variables:
-  mydate: $[format('{0:yyyy}-{0:MM}-{0:dd}T{0:HH}:{0:mm}:{0:ss}', pipeline.startTime)]
+  mydate: $(Date:yyyyMMdd)-$(Hours)$(Minutes)$(Seconds)
   branch: master
 
 # name: $(branch)
 # name: $(Date:yyyyMMdd)-$(Hours)$(Minutes)$(Seconds) - "Prueba-Master"
-name: $(Date:yyyyMMdd)-$(Hours)$(Minutes)$(Seconds)-$(branch)
+name: $(mydate)-$(branch)
 
 pool:
   vmImage: ubuntu-latest
