@@ -10,6 +10,7 @@ variables:
   mydate: $(Date:yyyyMMdd)-$(Hours)$(Minutes)$(Seconds)
   mydate2: $(Get-Date -format yyyyMMdd)
   mydate3: $[ format('{0:yyyyMMdd}', pipeline.startTime) ]
+  mydate4: $[ format('{0:yyyyMMdd HHmmss}', pipeline.startTime) ]
   branch: master
 
 # name: $(branch)
@@ -19,7 +20,7 @@ variables:
 #name: $(Date:yyyyMMdd)-$(Time:HHmmss)-$(branch)
 # name: $(Date:yyyyMMdd)-$(Hour:HH)-$(branch)
 # name: $(pipeline.startTime)-$(branch)
-name : $(mydate3)
+name : $(mydate4)
 
 pool:
   vmImage: ubuntu-latest
