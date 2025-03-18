@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/chemapairet/ChemaAzureDevOps20250311/_apis/build/status%2FChema1973.pipelines-dotnet-core%20-%20Branch?branchName=2025-03-11_azure-pipelines)](https://dev.azure.com/chemapairet/ChemaAzureDevOps20250311/_build/latest?definitionId=10&branchName=2025-03-11_azure-pipelines)
+
 # Sample ASP.NET Core application for Azure Pipelines docs
 
 For information on how to set up a pipeline for this repository, see [Create your first pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azure-devops).
