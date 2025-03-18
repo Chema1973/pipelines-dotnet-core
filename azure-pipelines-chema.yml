@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- 20250311_chema
+
+variables:
+   mydate: $[ format('{0:yyyyMMdd HHmmss}', pipeline.startTime) ]
+   branch: 20250311_chema
+
+# name: $(Get-Date -Format yyyy-MM-dd hhmmss)"-$(branch)"
+
+name: $(mydate)-$(branch)
+
+pool:
+  vmImage: ubuntu-latest
+  name: Default
+  demands:
+  - Agent.name -equals windows-10-agent-01
+
+steps:
+- script: echo Hello, Chema world!
+  displayName: 'Run a one-line script - Chema'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
