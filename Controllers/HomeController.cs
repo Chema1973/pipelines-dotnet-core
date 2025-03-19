@@ -12,17 +12,21 @@ namespace pipelines_dotnet_core.Controllers
     {
         public IActionResult Index()
         {
+            var prueba = "Test";
             return View();
         }
 
         public IActionResult Privacy()
         {
+            var prueba = "Test";
             return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+            var prueba = "Test";
+
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
