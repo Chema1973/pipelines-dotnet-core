@@ -21,6 +21,12 @@ pool:
   demands:
   - Agent.name -equals windows-10-agent-01
 
+resources:
+  pipelines:
+  - pipeline: Chema1973.pipelines-dotnet-core-Chema2
+    source: mypipeline
+    trigger: true 
+
 steps:
 - script: echo Hello, Chema world!
   displayName: 'Run a one-line script'
@@ -28,13 +34,13 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo $(resources.pipeline.myresourcevars.pipelineID)
-    echo $(resources.pipeline.myresourcevars.runName)
-    echo $(resources.pipeline.myresourcevars.runID)
-    echo $(resources.pipeline.myresourcevars.runURI)
-    echo $(resources.pipeline.myresourcevars.sourceBranch)
-    echo $(resources.pipeline.myresourcevars.sourceCommit)
-    echo $(resources.pipeline.myresourcevars.sourceProvider)
-    echo $(resources.pipeline.myresourcevars.requestedFor)
-    echo $(resources.pipeline.myresourcevars.requestedForID)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.pipelineID)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.runName)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.runID)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.runURI)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.sourceBranch)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.sourceCommit)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.sourceProvider)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.requestedFor)
+    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.requestedForID)
   displayName: 'Run a multi-line script'
