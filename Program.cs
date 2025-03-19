@@ -15,6 +15,7 @@ namespace pipelines_dotnet_core
     {
         public static void Main(string[] args)
         {
+            var prueba = "Test";
             CreateHostBuilder(args).Build().Run();
         }
 
