@@ -11,7 +11,6 @@ namespace pipelines_dotnet_core
     {
         public Startup(IConfiguration configuration)
         {
-            var prueba = "Test";
             Configuration = configuration;
         }
 
