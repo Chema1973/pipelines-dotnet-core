@@ -23,8 +23,8 @@ pool:
 
 resources:
   pipelines:
-  - pipeline: Chema1973.pipelines-dotnet-core-Chema2
-    source: mypipeline
+  - pipeline: mypipeline
+    source: Chema1973.pipelines-dotnet-core-Chema2
     trigger: true 
 
 steps:
@@ -34,13 +34,13 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.pipelineID)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.runName)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.runID)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.runURI)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.sourceBranch)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.sourceCommit)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.sourceProvider)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.requestedFor)
-    echo $(resources.pipeline.Chema1973.pipelines-dotnet-core-Chema2.requestedForID)
+    echo $(resources.pipeline.mypipeline.pipelineID)
+    echo $(resources.pipeline.mypipeline.runName)
+    echo $(resources.pipeline.mypipeline.runID)
+    echo $(resources.pipeline.mypipeline.runURI)
+    echo $(resources.pipeline.mypipeline.sourceBranch)
+    echo $(resources.pipeline.mypipeline.sourceCommit)
+    echo $(resources.pipeline.mypipeline.sourceProvider)
+    echo $(resources.pipeline.mypipeline.requestedFor)
+    echo $(resources.pipeline.mypipeline.requestedForID)
   displayName: 'Run a multi-line script'
