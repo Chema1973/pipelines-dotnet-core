@@ -8,6 +8,5 @@ namespace pipelines_dotnet_core.Models
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-        public string NewField { get; set; }
     }
 }
