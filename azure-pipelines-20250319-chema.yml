@@ -34,13 +34,20 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo $(resources.pipeline.mypipeline.pipelineID)
-    echo $(resources.pipeline.mypipeline.runName)
-    echo $(resources.pipeline.mypipeline.runID)
-    echo $(resources.pipeline.mypipeline.runURI)
-    echo $(resources.pipeline.mypipeline.sourceBranch)
-    echo $(resources.pipeline.mypipeline.sourceCommit)
-    echo $(resources.pipeline.mypipeline.sourceProvider)
-    echo $(resources.pipeline.mypipeline.requestedFor)
-    echo $(resources.pipeline.mypipeline.requestedForID)
+    echo pipelineID = $(resources.pipeline.mypipeline.pipelineID)
+    echo pipelineName = $(resources.pipeline.mypipeline.pipelineName)
+    echo projectName = $(resources.pipeline.mypipeline.projectName)
+    echo projectID = $(resources.pipeline.mypipeline.projectID)
+    echo runName = $(resources.pipeline.mypipeline.runName)
+    echo runID = $(resources.pipeline.mypipeline.runID)
+    echo runURI = $(resources.pipeline.mypipeline.runURI)
+    echo sourceBranch = $(resources.pipeline.mypipeline.sourceBranch)
+    echo sourceCommit = $(resources.pipeline.mypipeline.sourceCommit)
+    echo sourceProvider = $(resources.pipeline.mypipeline.sourceProvider)
+    echo requestedFor = $(resources.pipeline.mypipeline.requestedFor)
+    echo requestedForID = $(resources.pipeline.mypipeline.requestedForID)
   displayName: 'Run a multi-line script'
+
+
+
+
