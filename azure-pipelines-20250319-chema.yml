@@ -17,6 +17,9 @@ name: $(mydate)-$(branch)
 
 pool:
   vmImage: ubuntu-latest
+  # --> Donde se ejecuta la canalización
+  # vmImage: windows-latest
+  # vmImage: macos-latest
   name: Default
   demands:
   - Agent.name -equals windows-10-agent-01
