@@ -17,7 +17,7 @@ name: $(mydate)-$(branch)
 
 pool:
   vmImage: ubuntu-latest
-  # --> Donde se ejecuta la canalizaciÛn
+  # --> Donde se ejecuta la canalizaci√≥n
   # vmImage: windows-latest
   # vmImage: macos-latest
   name: Default
@@ -49,6 +49,8 @@ steps:
     echo sourceProvider = $(resources.pipeline.mypipeline.sourceProvider)
     echo requestedFor = $(resources.pipeline.mypipeline.requestedFor)
     echo requestedForID = $(resources.pipeline.mypipeline.requestedForID)
+    echo myVisibleVariable = $(myVisibleVariable)
+    echo mySecretVariable = $(mySecretVariable)
   displayName: 'Run a multi-line script'
 
 
